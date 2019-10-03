@@ -32,6 +32,7 @@ import History from '~/components/History'
 import Help from '~/components/commands/Help'
 import Whoami from '~/components/commands/Whoami'
 import Invalid from '~/components/commands/Invalid'
+import Ruslan from '~/components/commands/Ruslan'
 
 export default {
   components: {
@@ -63,6 +64,10 @@ export default {
           break
         case 'whoami':
           this.componentList.push(Whoami)
+          break
+        case 'ruslan':
+        case 'love':
+          this.componentList.push(Ruslan)
           break
         case 'clear':
           this.componentList = []
